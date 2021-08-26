@@ -62,7 +62,7 @@ export default function Home() {
 							<h3>Sobre mi</h3>
 						</Fade>
 
-						<Fade bottom cascade>
+						<Fade bottom>
 							<p style={{ textAlign: "justify" }}>
 								He tenido experiencia en proyectos para el
 								formato de Retail y Ecommerce ambos también en
