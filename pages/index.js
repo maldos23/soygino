@@ -6,12 +6,19 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Gino Missael - Desarrollador</title>
+				<title>Gino Missael - Desarrollador fullstack</title>
+				<meta charSet="utf-8" />
 				<meta
 					name="description"
 					content="Hola soy gino missael un desarrollador con mas de 6 años de
-            experiencia"
+            experiencia contacto: contacto@soygino.com"
 				/>
+				<meta
+					name="keywords"
+					content="HTML, CSS, JavaScript, Reactjs , Fullstack , Dev , Developer , Web, CDMX"
+				></meta>
+				<meta name="robots" />
+				<meta name="author" content="Gino Missael"></meta>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
@@ -38,6 +45,7 @@ export default function Home() {
 							objectFit="cover"
 							width={150}
 							height={150}
+              alt="profile"
 						/>
 						<h3>Sobre mi</h3>
 						<p style={{ textAlign: "justify" }}>
@@ -62,6 +70,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -70,6 +79,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -78,6 +88,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -86,6 +97,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 						</div>
@@ -96,6 +108,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -104,6 +117,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -112,6 +126,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -120,16 +135,18 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 						</div>
-            <div className={styles.content_flex}>
+						<div className={styles.content_flex}>
 							<div className={styles.icon_tecnologies}>
 								<Img
 									src="/img/material-ui.png"
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -138,6 +155,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -146,6 +164,7 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
 							<div className={styles.icon_tecnologies}>
@@ -154,22 +173,21 @@ export default function Home() {
 									objectFit="contain"
 									width={100}
 									height={100}
+                  alt="tech"
 								/>
 							</div>
+						</div>
+						<div>
+							<h4>Email de contacto</h4>
+							<h3>contacto@soygino.com</h3>
 						</div>
 					</div>
 				</div>
 			</main>
 
 			<footer className={styles.footer}>
-				<a
-					href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<Img src="/img/mx-flag.png" width={25} height={25} />
-					Mexican talent
-				</a>
+				<Img src="/img/mx-flag.png" width={25} height={25} />
+				Mexican talent
 			</footer>
 		</div>
 	);
