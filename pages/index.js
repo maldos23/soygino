@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Img from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -24,28 +23,36 @@ export default function Home() {
 
 			<main>
 				<div className={styles.main}>
-					<h1
-						className={`${styles.title} animate__animated animate__fadeInUp`}
-					>
-						Gino Missael
-					</h1>
-
-					<div className={styles.wrapper}>
-						<div className={styles["typing-demo"]}>
-							Fullstack Developer
+					<div>
+						<div className={styles["animated-title"]}>
+							<div className={styles["text-top"]}>
+								<div>
+									<span>Gino</span>
+									<span>Missael</span>
+								</div>
+							</div>
+							<div className={styles["text-bottom"]}>
+								<div>Fullstack Developer</div>
+							</div>
 						</div>
+					</div>
+
+					<div className={styles.arrow}>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
 				</div>
 				<div className={styles.wrapper_grid}>
-					<div className={styles.grid_2}>
-						<Img
+					<div>
+						<img
 							className={styles.avatar}
 							src="/img/profile.jpg"
-							layout="fixed"
-							objectFit="cover"
 							width={150}
 							height={150}
-              alt="profile"
+							alt="profile"
 						/>
 						<h3>Sobre mi</h3>
 						<p style={{ textAlign: "justify" }}>
@@ -61,132 +68,117 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
+				<div className={styles.wrapper_grid_icons}>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/react.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/next.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/nodejs.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/aws.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/npm.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/js.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/mongodb.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/firebase.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/material-ui.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/express.svg"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/socketio.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+					<div className={styles.icon_tecnologies}>
+						<img
+							src="/img/docker.png"
+							width="100px"
+							height="100px"
+							alt="tech"
+						/>
+					</div>
+				</div>
+
 				<div className={styles.wrapper_grid}>
-					<div className={styles.grid_2}>
-						<div className={styles.content_flex}>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/react.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/next.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/nodejs.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/aws.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-						</div>
-						<div className={styles.content_flex}>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/npm.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/js.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/mongodb.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/firebase.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-						</div>
-						<div className={styles.content_flex}>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/material-ui.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/express.svg"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/socketio.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-							<div className={styles.icon_tecnologies}>
-								<Img
-									src="/img/docker.png"
-									objectFit="contain"
-									width={100}
-									height={100}
-                  alt="tech"
-								/>
-							</div>
-						</div>
-						<div>
-							<h4>Email de contacto</h4>
-							<h3>contacto@soygino.com</h3>
-						</div>
+					<div>
+						<h4>Email de contacto</h4>
+						<h3>contacto@soygino.com</h3>
 					</div>
 				</div>
 			</main>
 
 			<footer className={styles.footer}>
-				<Img src="/img/mx-flag.png" width={25} height={25} />
+				<img src="/img/mx-flag.png" width={25} height={25} />
 				Mexican talent
 			</footer>
 		</div>

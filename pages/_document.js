@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
 					<link
 						rel="icon"
 						type="image/svg+xml"
-						href="/favicon.icon"
+						href="/favicon.ico"
 					/>
 					<link rel="preconnect" href="https://fonts.gstatic.com" />
 					<link
