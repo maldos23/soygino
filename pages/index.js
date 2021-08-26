@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-
+import Fade from "react-reveal/Fade";
+import Slide from "react-reveal/Slide";
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -47,126 +48,137 @@ export default function Home() {
 				</div>
 				<div className={styles.wrapper_grid}>
 					<div>
-						<img
-							className={styles.avatar}
-							src="/img/profile.jpg"
-							width={150}
-							height={150}
-							alt="profile"
-						/>
-						<h3>Sobre mi</h3>
-						<p style={{ textAlign: "justify" }}>
-							He tenido experiencia en proyectos para el formato
-							de Retail y Ecommerce ambos también en su área de
-							logística de trasporte y distribución aplicando
-							técnicas de estrategias Inbound como Outbound a lo
-							cual si tu necesidad es crear soluciones para
-							algunas de estas áreas estaré dispuesto a llevar las
-							mejores estrategias para poder lograr la mayor
-							eficiencia cuento con 6 años de experiencia como
-							programador web y 3 años como desarrollador android.
-						</p>
+						<Fade top>
+							<img
+								className={styles.avatar}
+								src="/img/profile.jpg"
+								width={150}
+								height={150}
+								alt="profile"
+							/>
+						</Fade>
+
+						<Fade left cascade>
+							<h3>Sobre mi</h3>
+						</Fade>
+
+						<Fade bottom cascade>
+							<p style={{ textAlign: "justify" }}>
+								He tenido experiencia en proyectos para el
+								formato de Retail y Ecommerce ambos también en
+								su área de logística de trasporte y distribución
+								aplicando técnicas de estrategias Inbound como
+								Outbound a lo cual si tu necesidad es crear
+								soluciones para algunas de estas áreas estaré
+								dispuesto a llevar las mejores estrategias para
+								poder lograr la mayor eficiencia cuento con 6
+								años de experiencia como programador web y 3
+								años como desarrollador android.
+							</p>
+						</Fade>
 					</div>
 				</div>
 				<div className={styles.wrapper_grid_icons}>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/react.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/next.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/nodejs.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/aws.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
+					<Slide bottom cascade>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/react.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/next.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/nodejs.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/aws.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
 
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/npm.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/js.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/mongodb.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/firebase.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/npm.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/js.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/mongodb.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/firebase.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
 
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/material-ui.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/express.svg"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/socketio.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
-					<div className={styles.icon_tecnologies}>
-						<img
-							src="/img/docker.png"
-							width="100px"
-							height="100px"
-							alt="tech"
-						/>
-					</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/material-ui.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/express.svg"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/socketio.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+						<div className={styles.icon_tecnologies}>
+							<img
+								src="/img/docker.png"
+								width="100px"
+								height="100px"
+								alt="tech"
+							/>
+						</div>
+					</Slide>
 				</div>
 
 				<div className={styles.wrapper_grid}>

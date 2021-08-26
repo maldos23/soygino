@@ -233,7 +233,7 @@
 	font-family: "Abril Fatface", cursive;
 	height: calc(100%  + 5rem);
 	position: relative;
-	margin: 0px 50px;
+	margin: 0px 20px;
 	width: 100%;
 }
 .animated-title > div {
