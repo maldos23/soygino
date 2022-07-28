@@ -1,7 +1,6 @@
 name: build-test-soygino
 
 on: [pull_request]
-
 jobs:
     build:
         runs-on: ubuntu-latest
