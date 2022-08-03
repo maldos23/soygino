@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
 }
 
 .black-btn {
@@ -294,8 +295,8 @@ svg {
 
 h5 {
 	color: #333;
-  padding:0;
-  margin: 0;
+	padding: 0;
+	margin: 0;
 	font-family: "Playfair Display", serif;
 	font-size: 3rem;
 	font-weight: 400;
@@ -308,13 +309,12 @@ h5 {
 
 h5 span {
 	font-size: 40px;
-	
 }
 
 .message {
 	background-color: #000000;
 	color: #ffffff;
-  display: block;
+	display: block;
 	font-weight: 900;
 	overflow: hidden;
 	position: absolute;
@@ -339,7 +339,7 @@ h5 span {
 		width: 0;
 	}
 	15% {
-		width: 290px;
+		width: 320px;
 	}
 	30% {
 		top: 0.5rem;
@@ -380,7 +380,7 @@ h5 span {
 	}
 	95% {
 		top: -9rem;
-		width: 285px;
+		width: 295px;
 	}
 	98% {
 		top: -9rem;

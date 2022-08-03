@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 
@@ -63,7 +64,9 @@ export default function Home() {
 							</div>
 						</div>
 					</div>
+
 					<a
+						href="#profile"
 						className="ca3-scroll-down-link ca3-scroll-down-arrow"
 						data-ca3_iconfont="ETmodules"
 						data-ca3_icon=""
@@ -71,8 +74,9 @@ export default function Home() {
 				</div>
 
 				{/* Parallax section */}
-				<div>
+				<div id="profile">
 					<div
+					
 						style={{
 							display: "block",
 							height: "100vh",
@@ -87,7 +91,8 @@ export default function Home() {
 								height: "100vh",
 								width: "100%",
 								objectFit: "contain",
-								filter: "contrast(200%)",
+								rotate: "180deg",
+								filter: "grayscale(100%) contrast(30%) brightness(2.0) ",
 							}}
 							src="back-3.mp4"
 							type="video/mp4"
@@ -97,53 +102,59 @@ export default function Home() {
 							loop
 							id="myVideo"
 						></video>
-
-						<div
-							style={{
-								textAlign: "center",
-								borderRadius: 25,
-								backdropFilter: "blur(5px)",
-								background: "rgba(255, 255,255,0.7)",
-								boxShadow:
-									"10px 10px 66px 12px rgba(138,138,138,0.59)",
-								padding: "20px 40px",
-								position: "absolute",
-								width: "90vmin",
-								maxWidth: "90%",
-								left: "50%",
-								top: "50%",
-								transform: "translate(-50%, -50%)",
-							}}
-						>
-							<img
-								className={styles.avatar}
-								src="/img/profile.jpg"
-								width={150}
-								height={150}
-								alt="profile"
-							/>
-							<h2 style={{ textAlign: "center" }}>Sobre mi</h2>
-							<p style={{ textAlign: "justify" }}>
-								Soy una persona que se incursiono al mundo del
-								desarrollo de software de una edad muy joven y
-								crecio en un entorno rodeado de tecnologia la
-								curiosidad me llevo a eperimentar con el codigo
-								y me ha dado una increible carreara profesional.
-								<br />
-								<br />
-								<br />
-							</p>
-							<p style={{ textAlign: "center" }}>
-								Si deseas saber mas te comparto mi cv
-							</p>
-							<a
-								target="_blank"
-								rel="noreferrer noopener"
-								className="black-btn"
-								href="https://drive.google.com/file/d/1UyFUmB-_uLNxymlTvzy27nE0c8T_UJOO/view?usp=sharing"
+						<div>
+							<div
+								
+								style={{
+									textAlign: "center",
+									borderRadius: 25,
+									padding: "20px 40px",
+									position: "absolute",
+									width: "90vmin",
+									maxWidth: "90%",
+									left: "50%",
+									top: "50%",
+									transform: "translate(-50%, -50%)",
+								}}
 							>
-								Descargar CV
-							</a>
+								<Image
+									className={styles.avatar}
+									src="/img/profile.jpg"
+									width={150}
+									height={150}
+									alt="profile"
+								/>
+								<h1
+									style={{
+										textAlign: "center",
+										fontWeight: "900",
+									}}
+								>
+									Sobre mi
+								</h1>
+								<p style={{ textAlign: "justify" }}>
+									Soy una persona que se incursiono al mundo
+									del desarrollo de software de una edad muy
+									joven y crecio en un entorno rodeado de
+									tecnologia la curiosidad me llevo a
+									eperimentar con el codigo y me ha dado una
+									increible carreara profesional.
+									<br />
+									<br />
+									<br />
+								</p>
+								<p style={{ textAlign: "center" }}>
+									Si deseas saber mas te comparto mi cv
+								</p>
+								<a
+									target="_blank"
+									rel="noreferrer noopener"
+									className="black-btn"
+									href="https://drive.google.com/file/d/1UyFUmB-_uLNxymlTvzy27nE0c8T_UJOO/view?usp=sharing"
+								>
+									Descargar CV
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -158,36 +169,7 @@ export default function Home() {
 						textAlign: "center",
 					}}
 				>
-					<svg viewBox="0 0 960 300">
-						<symbol id="s-text">
-							<text textAnchor="middle" x="50%" y="90%">
-								Skills
-							</text>
-						</symbol>
-
-						<g className="g-ants">
-							<use
-								xlinkHref="#s-text"
-								className="text-copy"
-							></use>
-							<use
-								xlinkHref="#s-text"
-								className="text-copy"
-							></use>
-							<use
-								xlinkHref="#s-text"
-								className="text-copy"
-							></use>
-							<use
-								xlinkHref="#s-text"
-								className="text-copy"
-							></use>
-							<use
-								xlinkHref="#s-text"
-								className="text-copy"
-							></use>
-						</g>
-					</svg>
+					<h1 style={{ color: "white", fontSize: 100 }}>Skills</h1>
 					<div
 						style={{
 							display: "block",
@@ -208,36 +190,41 @@ export default function Home() {
 							FrontEnd
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #7f00ff, #e100ff)"
+							bgColor="#e100ff"
 							completed={100}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							Backend
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #7f00ff, #e100ff)"
+							bgColor="#7f00ff"
 							completed={80}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							UI/UX
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #7f00ff, #e100ff)"
+							bgColor="#e100ff"
 							completed={80}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							CI/CD
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #7f00ff, #e100ff)"
-							completed={40}
+							bgColor="#7f00ff"
+							completed={60}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							QA
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #7f00ff, #e100ff)"
+							bgColor="#e100ff"
 							completed={40}
+							customLabel="."
 						/>
 					</div>
 					<div
@@ -260,29 +247,33 @@ export default function Home() {
 							Javascript
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #00c6ff, #0072ff)"
+							bgColor="#00c6ff"
 							completed={100}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							Typescript
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #00c6ff, #0072ff)"
+							bgColor="#0072ff"
 							completed={80}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							Python
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #00c6ff, #0072ff)"
+							bgColor="#00c6ff"
 							completed={40}
+							customLabel="."
 						/>
 						<p style={{ textAlign: "justify", color: "white" }}>
 							Shell
 						</p>
 						<ProgressBar
-							bgColor="linear-gradient(to right, #00c6ff, #0072ff)"
+							bgColor="#0072ff"
 							completed={100}
+							customLabel="."
 						/>
 					</div>
 				</div>
@@ -312,20 +303,21 @@ export default function Home() {
 							}}
 						>
 							<h5>
-								<span>Tecnologias</span>
-							</h5>
-							<h5>
-								<span>.</span>
+								<span style={{ color: "transparent" }}>
+									{"."}
+								</span>
 								<div className="message">
 									<div className="word1">Reacjs</div>
 									<div className="word2">Nodejs</div>
 									<div className="word3">Docker</div>
 								</div>
 							</h5>
-
+							<h5 style={{ fontWeight: "bold" }}>
+								<span>Tecnologias</span>
+							</h5>
 							<p
 								style={{
-									margin: "50px 40px",
+									margin: "20px 40px",
 								}}
 							>
 								Suelo usar las siguientes tecnologias con las
@@ -336,100 +328,100 @@ export default function Home() {
 
 					<div className={styles.wrapper_grid_icons}>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/react.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/next.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/nodejs.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/aws.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/npm.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/js.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/mongodb.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/firebase.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/material-ui.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/express.svg"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/socketio.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
 						<div className={styles.icon_tecnologies}>
-							<img
+							<Image
 								src="/img/docker.png"
-								width="100px"
-								height="100px"
+								width={100}
+								height={100}
 								alt="tech"
 							/>
 						</div>
@@ -453,7 +445,7 @@ export default function Home() {
 							height: "100%",
 							width: "100%",
 							objectFit: "cover",
-							filter: "grayscale(200%)",
+							filter: "grayscale(200%) contrast(250%)",
 						}}
 						src="back-4.mp4"
 						type="video/mp4"
