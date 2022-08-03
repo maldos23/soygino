@@ -34,6 +34,7 @@ export default function Home() {
 							height: "100vh",
 							width: "100%",
 							objectFit: "cover",
+							filter: "contrast(120%)",
 						}}
 						src="back-2.mp4"
 						type="video/mp4"
@@ -76,7 +77,6 @@ export default function Home() {
 				{/* Parallax section */}
 				<div id="profile">
 					<div
-					
 						style={{
 							display: "block",
 							height: "100vh",
@@ -104,7 +104,6 @@ export default function Home() {
 						></video>
 						<div>
 							<div
-								
 								style={{
 									textAlign: "center",
 									borderRadius: 25,
