@@ -132,12 +132,12 @@ export default function Home() {
 									Sobre mi
 								</h1>
 								<p style={{ textAlign: "justify" }}>
-									Soy una persona que se incursiono al mundo
-									del desarrollo de software de una edad muy
-									joven y crecio en un entorno rodeado de
-									tecnologia la curiosidad me llevo a
-									eperimentar con el codigo y me ha dado una
-									increible carreara profesional.
+									Soy una persona que incursionó al mundo del
+									desarrollo de software a una edad muy joven
+									y creció en un entorno rodeado de tecnología
+									la curiosidad me llevó a experimentar con el
+									código y me ha dado una increíble carrera
+									profesional.
 									<br />
 									<br />
 									<br />
@@ -168,14 +168,16 @@ export default function Home() {
 						textAlign: "center",
 					}}
 				>
-					<h1 style={{ color: "white", fontSize: 100 }}>Skills</h1>
+					<h1 style={{ color: "white", fontSize: "4.5rem" }}>
+						Skills
+					</h1>
 					<div
 						style={{
 							display: "block",
 							borderRadius: 25,
 							backdropFilter: "blur(5px)",
 							boxShadow:
-								"10px 10px 66px 12px rgba(138,138,138,0.59)",
+								"0px 0px 35px 0px rgba(138,138,138,0.59)",
 							margin: "40px 40px",
 							padding: "30px 20px",
 							width: "90vmin",
@@ -232,7 +234,7 @@ export default function Home() {
 							borderRadius: 25,
 							backdropFilter: "blur(5px)",
 							boxShadow:
-								"10px 10px 66px 12px rgba(138,138,138,0.59)",
+								"0px 0px 35px 0px rgba(138,138,138,0.59)",
 							margin: "40px 40px",
 							padding: "30px 20px",
 							width: "90vmin",
@@ -471,7 +473,9 @@ export default function Home() {
 								transform: "translate(-50% , -50%)",
 							}}
 						>
-							<h4 style={{ color: "#FFFFFF" }}>
+							<h4
+								style={{ fontSize: "2.2rem", color: "#FFFFFF" }}
+							>
 								Programando todo es posible
 							</h4>
 						</div>

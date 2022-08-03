@@ -18,7 +18,7 @@
 .icon_tecnologies {
 	text-align: center;
 	margin: 5px 10px;
-	filter: grayscale(100%);
+	filter: grayscale(250%)  brightness(1);
 }
 
 .icon_tecnologies img {
